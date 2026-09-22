@@ -1,0 +1,153 @@
+{
+  "algorithm_version": "stable-v1.0.0",
+  "archive_sha256": "794bf73f4cca56184f95575a5d493ac56822611c207820a32f92faba9709d67c",
+  "source_repository": "myPlots",
+  "module_count": 17,
+  "extraction": [
+    {
+      "target": "model.py",
+      "source": "code/myplots_app/experimental/band_tracking/model.py",
+      "source_sha256": "8c220b016dbf8d60bfa5c5c2973cf7d1f4b799748ecb4bd993930583cb9e5a52",
+      "symbols": "module",
+      "port_sha256": "8c220b016dbf8d60bfa5c5c2973cf7d1f4b799748ecb4bd993930583cb9e5a52"
+    },
+    {
+      "target": "model_guided_transport.py",
+      "source": "code/myplots_app/experimental/band_tracking/model_guided_transport.py",
+      "source_sha256": "8f6f827989cd6869ada27c9422e07d277d2d9584a75bbe297f9409954d935fe9",
+      "symbols": "module",
+      "port_sha256": "8f6f827989cd6869ada27c9422e07d277d2d9584a75bbe297f9409954d935fe9"
+    },
+    {
+      "target": "scalar_model_grouping.py",
+      "source": "code/myplots_app/experimental/band_tracking/scalar_model_grouping.py",
+      "source_sha256": "01f31b0762ce46b4ef78bd62f6d9480780ed919601e01a8deea904c391608c64",
+      "symbols": "module",
+      "port_sha256": "adcddfb38cdf1299f0ee30da5fa0cb05b720a3437cf11439da6f948c76692b7f"
+    },
+    {
+      "target": "scalar_models.py",
+      "source": "code/myplots_app/experimental/band_tracking/scalar_models.py",
+      "source_sha256": "625d7e8eee21af58f253de7d264578f87f1f8ae5b20d101e49bbd6453dc49f51",
+      "symbols": "module",
+      "port_sha256": "625d7e8eee21af58f253de7d264578f87f1f8ae5b20d101e49bbd6453dc49f51"
+    },
+    {
+      "target": "scalar_strip.py",
+      "source": "code/myplots_app/experimental/band_tracking/scalar_strip.py",
+      "source_sha256": "abf060095021c82e5bd10cfc7c5bf0570cee671590379eaeeaf1489a418547f1",
+      "symbols": "module",
+      "port_sha256": "abf060095021c82e5bd10cfc7c5bf0570cee671590379eaeeaf1489a418547f1"
+    },
+    {
+      "target": "permutation_transport.py",
+      "source": "code/myplots_app/experimental/band_tracking/permutation_transport.py",
+      "source_sha256": "5414407530d8d3205ecafaf44cd7cf7254764e9e0d7f33b63a4f9446473dfbeb",
+      "symbols": "module",
+      "port_sha256": "5414407530d8d3205ecafaf44cd7cf7254764e9e0d7f33b63a4f9446473dfbeb"
+    },
+    {
+      "target": "discriminant_transport.py",
+      "source": "code/myplots_app/experimental/band_tracking/discriminant_transport.py",
+      "source_sha256": "66098ae4e0a8de23e363c07d8270f891fb6c0bccdfe0a77346f7f7521ee6cb4c",
+      "symbols": "module",
+      "port_sha256": "66098ae4e0a8de23e363c07d8270f891fb6c0bccdfe0a77346f7f7521ee6cb4c"
+    },
+    {
+      "target": "tracking.py",
+      "source": "code/myplots_app/experimental/band_tracking/tracking.py",
+      "source_sha256": "6bb56ccad3cded317f9d1d63c97b514f0e6a93bb72b6188a78c25362371335cc",
+      "symbols": [
+        "_UnionFind",
+        "_component_extent",
+        "_component_support_cut",
+        "_assemble_components"
+      ],
+      "port_sha256": "720d75c60a9871f59440bfb09c762aa204c386cf2a17a3d808be240c324f5c3a"
+    },
+    {
+      "target": "classification.py",
+      "source": "code/myplots_app/experimental/band_tracking/classification.py",
+      "source_sha256": "1893c85b32ea99ab3b123bf80fdeaf41d93512150df0d6f262f340d5f80293ee",
+      "symbols": [
+        "validate_assignment",
+        "mesh_from_assignment"
+      ],
+      "port_sha256": "010439893fda315cf236a5b4d48171fa29a0d584cac7bc10568a73f9ee5541ed"
+    },
+    {
+      "target": "local_pair_stitching.py",
+      "source": "code/tests/bandtrack/local_pair_stitching.py",
+      "source_sha256": "74800101783a4ea3c5b3d8cc5eacc664370ef282ed92137338202d0bf1aae98d",
+      "symbols": [
+        "Union",
+        "preferences"
+      ],
+      "port_sha256": "142609425bc1c2543a6ffd30e481dc0a3d4517136b856d20ee958495349b84ee"
+    },
+    {
+      "target": "multiband_blocks.py",
+      "source": "code/tests/bandtrack/multiband_blocks.py",
+      "source_sha256": "ec8dabd38fd7f8cc5bb95959f73da691b24cef7dcde8e3f907c03449f4a27c60",
+      "symbols": [
+        "interaction_blocks"
+      ],
+      "port_sha256": "a00c6e022a877c8db91bd08971e79df6a989feea84f514f6fb70ed21895ca3b1"
+    },
+    {
+      "target": "polynomial.py",
+      "source": "code/tests/bandtrack/real_local_structure_probe.py",
+      "source_sha256": "b12ef6c83092e5d9ae3a826d2a7999f1e6b240246a5628fab5a005cda90f730b",
+      "symbols": [
+        "design"
+      ],
+      "port_sha256": "3545d32de1cd4981bc3c3a44732ace4df0bee42be8bccac8c9f3a87864e8db4e"
+    },
+    {
+      "target": "projected_connections.py",
+      "source": "code/tests/bandtrack/projected_connections.py",
+      "source_sha256": "3739f3d25ab34e59c7cef87a4fac3b70f5b11052630761fb968cf4bb6413ed8e",
+      "symbols": [
+        "restore_model",
+        "contact_options",
+        "raw_chord_costs",
+        "evidence_edge"
+      ],
+      "port_sha256": "e0181aa64738f7c322dc57cca33b13ea2650ef3b09d6a2e63faa500e9d247e38"
+    },
+    {
+      "target": "local_spectral_contact.py",
+      "source": "code/tests/bandtrack/local_spectral_contact.py",
+      "source_sha256": "c75e2f496495ac8ea2cb07a07add80c33ab7984369766103287ea2a059fdd935",
+      "symbols": "module",
+      "port_sha256": "d0e4455e39c7aaf5ff0bfc12ca059c51491983fd5d3fbbe10f8e9d7aeab8b89c"
+    },
+    {
+      "target": "partial_observations.py",
+      "source": "code/tests/bandtrack/partial_observations.py",
+      "source_sha256": "fdd7a16658404d660355c1da5e663d46c0393ef7505b6ab2656ef47cd4c3dbed",
+      "symbols": "module",
+      "port_sha256": "e844d94879ee40bc45ce4ee724f8a1d02804f224203dc65c74b918c3c521ff2f"
+    },
+    {
+      "target": "partial_observation_grouping.py",
+      "source": "code/tests/bandtrack/partial_observation_grouping.py",
+      "source_sha256": "fe510ca16856217a58f4a3f798c91f3eea40244648fd5a4167402a4a3f79a0aa",
+      "symbols": "module",
+      "port_sha256": "fe510ca16856217a58f4a3f798c91f3eea40244648fd5a4167402a4a3f79a0aa"
+    },
+    {
+      "target": "stable_v1.py",
+      "source": "code/tests/bandtrack/stable_v1.py",
+      "source_sha256": "c1bd6baed41cd2a2bb27c5b37cc1555b0b5bab71cb448e5ab12e746e07ab8155",
+      "symbols": "module",
+      "port_sha256": "70440c88529ae05878157d3d2fac6f98375775646ed2dbf85ef18845d33b7874"
+    }
+  ],
+  "changes": [
+    "consumer imports redirected to private sibling modules",
+    "unused benchmark/visualization import closure excluded",
+    "unreachable standalone G1 fallback removed; G10 always supplies transport fallback",
+    "consumer legacy payload exporter replaced by schema-neutral raw geometry"
+  ]
+}
