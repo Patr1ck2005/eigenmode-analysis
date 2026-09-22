@@ -17,6 +17,11 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 WORK_ROOT = ROOT.parent
 FORBIDDEN_IMPORTS = {
+    "myplots_app",
+    "tests",
+    "plotly",
+    "campaign_data",
+    "plot_workflows",
     "core",
     "jpype",
     "matplotlib",

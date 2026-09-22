@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "eigenmode-analysis"
-version = "0.2.10"
+version = "0.3.1"
 description = "Schema-neutral numerical analysis primitives for eigenmode research"
 readme = "README.md"
 requires-python = ">=3.10"
