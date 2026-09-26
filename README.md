@@ -1,5 +1,7 @@
 # eigenmode-analysis
 
+For tasks in the personal research system, read the [canonical MyPhysics entry](D:/Obsidian/MyPhysics/System/README.md) and follow its pointers to the owning scientific project. This does not change the domain-neutral package contract. [Local Agent rules](AGENTS.md); [shared-library ownership](D:/Dev/Projects/Work/research-agent-workbench/docs/shared-libraries/shared-library-catalog.md).
+
 `eigenmode-analysis` provides schema-neutral numerical primitives for
 eigenvalue and mode analysis. It accepts arrays, coordinates, and typed models;
 it does not read simulator files, DataFrames, project manifests, or plotting
