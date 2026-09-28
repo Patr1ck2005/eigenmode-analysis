@@ -1,6 +1,6 @@
 # eigenmode-analysis
 
-<p align="center"><img src="docs/assets/portfolio/scientific-tools-v1.png" width="760" alt="Four glass modules linked by light: the shared scientific-tooling collection" /></p>
+<p align="center"><img src="docs/assets/portfolio/scientific-tools-research-v2.png" width="760" alt="Research-style schematic: data matrices, eigenvalue samples, scientific plots and visualization workflows" /></p>
 
 *Concept illustration for the shared scientific-tooling collection; not a computed result. [Artwork provenance](docs/assets/portfolio/manifest.json).*
 
@@ -57,7 +57,7 @@ column-name convention is assumed.
 
 ## Real-frequency band-surface grouping
 
-<p align="center"><img src="docs/assets/portfolio/band-grouping-v1.png" width="760" alt="Band grouping concept: discrete samples arranged into three coloured surfaces" /></p>
+<p align="center"><img src="docs/assets/portfolio/band-grouping-research-v2.png" width="760" alt="Research-style schematic: sampled band surfaces and observations before and after grouping" /></p>
 
 *Concept illustration, not computed data or a claim of unique physical mode identity. [Artwork provenance](docs/assets/portfolio/manifest.json).*
 
