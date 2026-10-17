@@ -1,0 +1,126 @@
+{
+  "evidence_type": "computed synthetic software demonstration",
+  "data_origin": "independent generic mathematical definitions in source; no research data",
+  "seed": 1729,
+  "source": "../../../examples/synthetic_tracking.py",
+  "source_sha256": "7a75381d5d52881f7d99137e83e972cf5b7b200660b542c1b8ade7da18448b63",
+  "helper_sha256": "b631e717eb2ff96fffac5fc20e7e681736eeb4cdcac6f1854ff9539c9c16adc6",
+  "generation_command": "python examples/synthetic_tracking.py --out docs/assets/showcase",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "pandas": "3.0.6",
+    "eigenmode-analysis": "0.2.10",
+    "plot-foundation": "0.1.13",
+    "plot-workflows": "0.1.7",
+    "campaign-data": "0.2.0"
+  },
+  "installed_artifacts": {
+    "eigenmode-analysis": {
+      "archive_sha256": "483af0d204d83e9d1425659468391c4219eb43b40644a556a1b7b0372260d864",
+      "vcs_commit_id": null
+    },
+    "plot-foundation": {
+      "archive_sha256": "5cd802037963d14b986fc911f102b9031d4b58b0c8bbac5d98d0cb551400e732",
+      "vcs_commit_id": null
+    },
+    "plot-workflows": {
+      "archive_sha256": "829e63d6bdfda7b9a94bf30820e58b7c5689480df985d24b22fa761dd0b909f2",
+      "vcs_commit_id": null
+    },
+    "campaign-data": {
+      "archive_sha256": "b1503f8c4a286e4dea4541dc8f2a4be4f76069bc0a01a6975185243a3aa44c79",
+      "vcs_commit_id": null
+    }
+  },
+  "conventions": "All coordinates and eigenvalues are dimensionless. Both path panels show exactly the same candidates. Colors denote computed track labels; shaded interval contains eight missing samples of the upper branch. Lines connect available samples only; no gap is filled. The graph uses a 13 × 9 non-square grid and one empty site.",
+  "data_space_decisions": [
+    {
+      "intrinsic_dimension": "1D",
+      "sampling_topology": "ordered path with shuffled candidate lists",
+      "parameter_space": "generic scalar parameter",
+      "quantity": "synthetic eigenvalue",
+      "compatible_views": [
+        "scatter",
+        "tracked lines",
+        "assignment diagnostics"
+      ],
+      "selected_views": "raw/tracked comparison and cost diagnostic",
+      "transformation_status": "same-dimensional assignment, no interpolation"
+    },
+    {
+      "intrinsic_dimension": "2D",
+      "sampling_topology": "regular non-square grid with one hole",
+      "parameter_space": "generic two-parameter scan",
+      "quantity": "tracked scalar values and assignment coverage",
+      "compatible_views": [
+        "heatmap",
+        "surface"
+      ],
+      "selected_views": "coverage and cost heatmaps",
+      "transformation_status": "graph assignment"
+    }
+  ],
+  "checks": {
+    "raw_observations": 265,
+    "assigned_observations": 265,
+    "missing_path_slots": 8,
+    "crossing_expected_values_match": true,
+    "graph_coverage": 0.9914529914529915,
+    "graph_order_invariance": true,
+    "graph_conflicts": 0,
+    "all_assertions_passed": true
+  },
+  "style": "explicit documentation geometry; 180 DPI preview; fixed canvas; Arial 8/9 pt",
+  "images": [
+    {
+      "stem": "hero",
+      "title": "Same samples, explicit identities",
+      "caption": "Hungarian path tracking resolves the crossing using continuity; the missing upper-branch interval remains absent.",
+      "size_mm": [
+        210.0,
+        75.0
+      ],
+      "dpi": 180,
+      "png_sha256": "96312d8c95ba86e21096678c153538a1f1d365edeaf06628a1dc466daa16364b",
+      "svg_sha256": "d7f34e7e79fe8c81a3ec612da39edc41efaac0c1a88704585a9e48a625465886"
+    },
+    {
+      "stem": "crossing-missing",
+      "title": "Crossing and missing candidates",
+      "caption": "Candidate IDs are local opaque strings. All 265 observations survive assignment, with eight missing track slots.",
+      "size_mm": [
+        105.0,
+        70.0
+      ],
+      "dpi": 180,
+      "png_sha256": "edfade74bb721fa6613ff60dec2b3bc2092c19d87f633057972f1ddf1f06b815",
+      "svg_sha256": "44590af2ffa1bd16a8180f7bbdcd54207cffc3a9387dd9e9cf79cc5ec9d33e3f"
+    },
+    {
+      "stem": "path-diagnostics",
+      "title": "Assignment diagnostics",
+      "caption": "Costs are numerical matching costs, not probabilities. Missing samples reduce coverage without inventing replacement values.",
+      "size_mm": [
+        105.0,
+        95.0
+      ],
+      "dpi": 180,
+      "png_sha256": "4d5331a18f98c143aa3f5ef8274b234fe309270dbe45967d5e60e0fa042b1bb0",
+      "svg_sha256": "d957dab4ab06f9d6621e337285cd3494f65c328174c98b594fd74ac4fd462cf5"
+    },
+    {
+      "stem": "graph-diagnostics",
+      "title": "Directed-graph tracking",
+      "caption": "The empty site is retained; all other sites have two assignments. White in the cost map also includes the anchor, which has no incoming assignment cost. Reversing candidate order leaves identities unchanged.",
+      "size_mm": [
+        210.0,
+        75.0
+      ],
+      "dpi": 180,
+      "png_sha256": "f64d61e2f37d289ba5728741455efdee276568d61ded761efc6f4f74dfb4987b",
+      "svg_sha256": "3c93c7e1941268afcb49d2958d2806b92780bf7970003e4679afb9db481f52a5"
+    }
+  ]
+}

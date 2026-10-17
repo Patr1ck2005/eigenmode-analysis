@@ -1,66 +1,96 @@
-# eigenmode-analysis
+# Eigenmode Analysis
 
-`eigenmode-analysis` provides schema-neutral numerical primitives for
-eigenvalue and mode analysis. It accepts arrays, coordinates, and typed models;
-it does not read simulator files, DataFrames, project manifests, or plotting
-configuration.
+[English](README.md) · [简体中文](README.zh-CN.md) · [Synthetic gallery](docs/assets/showcase/gallery.html) · [Public API](docs/public-api.md)
 
-## Scope
+Track eigenmode candidates without losing their identity or hiding missing samples. Array-based path and directed-graph tracking exposes assignment costs, coverage, rejected candidates and graph diagnostics.
 
-- path and directed-graph mode tracking with explicit candidate identity;
-- Hungarian assignment, missing-mode and NaN handling, and diagnostics;
-- symmetry, polarization, topology, propagation, fitting, and grid sampling
-  primitives;
-- compatibility helpers for established candidate-grid workflows.
+![The same observations before and after tracking](docs/assets/showcase/hero.png)
 
-Plotting belongs to `plot-foundation`; high-level composition belongs to
-`plot-workflows`; campaign file management belongs to `campaign-data`.
+**Computed synthetic demonstration.** Both panels contain the same 265 observations; eight missing slots remain missing. Colors denote numerical tracks, not unique physical mode identities. [Source](examples/synthetic_tracking.py) · [Provenance](docs/assets/showcase/manifest.json).
 
-## Quick start
+## Capabilities
+
+| Capability | Public interface | Application |
+|---|---|---|
+| Ordered scans | `CandidateSet`, `TrackingConfig`, `track_path` | Reordered candidates, crossing branches and missing observations |
+| Parameter graphs | `TraversalEdge`, `rectilinear_traversal`, `track_graph` | Explicit traversal, incoming-edge diagnostics and empty sites |
+| Field and mode analysis | `symmetry`, `polarization`, `topology`, `propagation` | Reusable numerical operations on arrays |
+| Sampling and characterization | `grid_sampling`, `lineshapes`, `peak_tracking`, `field_regimes` | Analysis independent of readers and rendering |
+
+Runtime dependencies are NumPy and SciPy. The numerical package does not import plotting backends, DataFrames, simulator APIs or consumers. Callers own readers, physical selection, output paths and interpretation.
+
+```mermaid
+flowchart LR
+    A[Arrays and candidate IDs] --> B[Explicit path or graph]
+    B --> C[Configured assignment]
+    C --> D[Tracked IDs and arrays]
+    C --> E[Missing slots, costs, diagnostics]
+    D --> F[Caller analysis or plotting]
+```
+
+## Release lines and installation
+
+| Public branch | Version | Compatibility |
+|---|---|---|
+| Default: `public-release` | **0.2.10** | Stable path/graph API; compatible with Plot Workflows 0.1.7 |
+| `feature/band-tracking-v2` | **0.3.1** | Adds opt-in `band_grouping`; outside Workflows 0.1.7's `<0.3` requirement |
+
+This is the default stable-release documentation. The gallery runs against the **0.2.10 wheel**, and does not validate the separate grouping algorithm. Python 3.10+ and Git are required for this pinned public-source install; no package-index release or version tag is assumed.
+
+```bash
+python -m venv .venv
+# Activate .venv for your shell, then:
+python -m pip install "eigenmode-analysis @ git+https://github.com/Patr1ck2005/eigenmode-analysis.git@e172495aa0c561cf0edf251ae9828dd5e54d2d64"
+python -m pip check
+```
+
+A verified local `eigenmode_analysis-0.2.10-py3-none-any.whl` is also suitable. Stable consumers should install wheels rather than inject sibling-source paths.
+
+## Complete small example
 
 ```python
-from eigenmode_analysis.tracking import TrackingConfig, track_path
+import numpy as np
+from eigenmode_analysis.tracking import CandidateSet, TrackingConfig, track_path
 
-result = track_path(
-    points,
-    coordinates=k_values,
-    anchor_index=anchor_index,
-    config=TrackingConfig(),
-)
+t = np.linspace(-1, 1, 21)
+points = []
+for i, value in enumerate(t):
+    order = [1, 0] if i % 2 else [0, 1]
+    values = np.array([1 + 0.2 * value, 1 - 0.2 * value])
+    points.append(CandidateSet(order, values[order, None]))
+result = track_path(points, coordinates=t,
+                    config=TrackingConfig(n_tracks=2, derivative_weights=2))
+assert result.coverage == 1.0
+print(result.features.shape)  # (21, 2, 1)
 ```
 
-For a rectilinear candidate grid:
+Candidate IDs are opaque and local to each site. Feature scaling and continuity assumptions affect assignment; cost is not probability. Missing or rejected assignments remain `None`/NaN rather than silently becoming another mode.
 
-```python
-from eigenmode_analysis.tracking import (
-    TrackingConfig, rectilinear_traversal, track_graph,
-)
+## Computed examples
 
-order, edges = rectilinear_traversal(shape=(31, 31), deltas=(0.001, 0.001))
-result = track_graph(
-    points_by_index,
-    node_order=order,
-    edges=edges,
-    anchor_id=(0, 0),
-    config=TrackingConfig(),
-)
+| Crossing and missing samples | Directed-graph diagnostics |
+|---|---|
+| ![Tracked branches with a gap](docs/assets/showcase/crossing-missing.png) | ![Graph coverage and costs](docs/assets/showcase/graph-diagnostics.png) |
+
+[Path-cost diagnostic](docs/assets/showcase/path-diagnostics.png) · [Offline PNG/SVG gallery](docs/assets/showcase/gallery.html).
+
+From this repository, install the example's rendering dependency and run:
+
+```bash
+python -m pip install "plot-foundation @ git+https://github.com/Patr1ck2005/plot-foundation.git@c3d3cc23b2bb4da7ade7e5edf553d4a36d19db7f"
+python examples/synthetic_tracking.py --out docs/assets/showcase
 ```
 
-Fields use explicit x-first shapes where documented; no implicit spacing or
-column-name convention is assumed.
+The fixed-seed example uses public APIs and independently defined mathematics. Assertions check observation preservation, the expected crossing, eight missing slots, an empty graph site and input-order invariance. PNG/SVG exports, the HTML gallery and manifest record source hashes, versions, dimensions and checks.
 
-## Installation and development
+## Separate advanced grouping line
 
-```powershell
-python -m pip install eigenmode-analysis
-python -m pip install "eigenmode-analysis[dev]"
-python -m pytest -q
-```
+Version 0.3.1 is available on the separate public feature branch. Read its [grouping contract](https://github.com/Patr1ck2005/eigenmode-analysis/blob/feature/band-tracking-v2/docs/band-grouping.md) before adopting it; do not implicitly upgrade a workflow environment requiring a version below 0.3.
 
-See [docs/public-api.md](docs/public-api.md) for the public boundary and
-[docs/architecture.md](docs/architecture.md) for dependency rules.
+## Documentation and development
 
-## Versioning
+[Public API](docs/public-api.md) · [Architecture](docs/architecture.md) · [Changelog](CHANGELOG.md) · [Agent rules](AGENTS.md) · [Four-library example](https://github.com/Patr1ck2005/plot-workflows#run-the-end-to-end-example).
 
-Numerical contract changes require characterization tests and a changelog
-entry. Stable consumer environments should install a tagged wheel.
+For package development, use an isolated environment, install `.[dev]`, and run `python -m pytest -q`. Example assertions cover less than the complete package suite.
+
+MIT licensed; these examples make no experimental, full-wave or unpublished-research claim.
