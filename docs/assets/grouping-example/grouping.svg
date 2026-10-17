@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="105mm" height="68mm" viewBox="0 0 397 257">
+<rect width="397" height="257" fill="white"/>
+<g font-family="Arial,Helvetica,sans-serif" font-size="10.6667" fill="#172238">
+<path d="M38,161 L167,161" fill="none" stroke="#172238" stroke-width="0.67"/>
+<path d="M38,161 L38,32" fill="none" stroke="#172238" stroke-width="0.67"/>
+<path d="M38,161 L38,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="38" y="175" text-anchor="middle">-1</text>
+<path d="M102.5,161 L102.5,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="102.5" y="175" text-anchor="middle">0</text>
+<path d="M167,161 L167,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="167" y="175" text-anchor="middle">1</text>
+<path d="M38,161 L41,161" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="33" y="164.5" text-anchor="end">-0.7</text>
+<path d="M38,96.5 L41,96.5" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="33" y="100" text-anchor="end">0</text>
+<path d="M38,32 L41,32" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="33" y="35.5" text-anchor="end">0.7</text>
+<text x="102.5" y="190" text-anchor="middle">u</text>
+<text x="9" y="96.5" text-anchor="middle" transform="rotate(-90 9 96.5)">v</text>
+<text x="18" y="22" font-size="12">(a)</text>
+<circle cx="38" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="38" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="59.5" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="81" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="96.5" r="3.3" fill="white" stroke="#e31a35" stroke-width="1.2"/>
+<path d="M100.5,94.5 L104.5,98.5" fill="none" stroke="#e31a35" stroke-width="1"/>
+<path d="M100.5,98.5 L104.5,94.5" fill="none" stroke="#e31a35" stroke-width="1"/>
+<circle cx="102.5" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="102.5" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="124" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="145.5" cy="32" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="161" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="139.5" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="118" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="96.5" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="75" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="53.5" r="2.5" fill="#1257df"/>
+<circle cx="167" cy="32" r="2.5" fill="#1257df"/>
+<text x="38" y="207" font-size="9.3333">Filled: 2 raw observations</text>
+<text x="38" y="220" font-size="9.3333">Cross: 0 observations</text>
+<path d="M239,161 L380,161" fill="none" stroke="#172238" stroke-width="0.67"/>
+<path d="M239,161 L239,32" fill="none" stroke="#172238" stroke-width="0.67"/>
+<path d="M239,161 L239,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="239" y="175" text-anchor="middle">-1</text>
+<path d="M309.5,161 L309.5,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="309.5" y="175" text-anchor="middle">0</text>
+<path d="M380,161 L380,158" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="380" y="175" text-anchor="middle">1</text>
+<path d="M239,161 L242,161" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="234" y="164.5" text-anchor="end">0.7</text>
+<path d="M239,96.5 L242,96.5" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="234" y="100" text-anchor="end">1</text>
+<path d="M239,32 L242,32" fill="none" stroke="#172238" stroke-width="0.67"/>
+<text x="234" y="35.5" text-anchor="end">1.3</text>
+<text x="309.5" y="190" text-anchor="middle">u</text>
+<text x="210" y="96.5" text-anchor="middle" transform="rotate(-90 210 96.5)">Re z</text>
+<text x="219" y="22" font-size="12">(b)</text>
+<circle cx="239" cy="151.755" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M235.8,41.055 L242.2,47.455" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M235.8,47.455 L242.2,41.055" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="262.5" cy="133.838" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M259.3,58.9717 L265.7,65.3717" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M259.3,65.3717 L265.7,58.9717" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="286" cy="115.922" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M282.8,76.8883 L289.2,83.2883" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M282.8,83.2883 L289.2,76.8883" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="309.5" cy="98.005" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M306.3,94.805 L312.7,101.205" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M306.3,101.205 L312.7,94.805" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="333" cy="80.0883" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M329.8,112.722 L336.2,119.122" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M329.8,119.122 L336.2,112.722" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M353.3,130.638 L359.7,137.038" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M353.3,137.038 L359.7,130.638" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="356.5" cy="62.1717" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<circle cx="380" cy="44.255" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<path d="M376.8,148.555 L383.2,154.955" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M376.8,154.955 L383.2,148.555" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<circle cx="247" cy="201" r="3.5" fill="none" stroke="#1257df" stroke-width="1.1"/>
+<text x="255" y="204" font-size="9.3333">Group 0</text>
+<path d="M308,198 L314,204" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<path d="M308,204 L314,198" fill="none" stroke="#e31a35" stroke-width="1.1"/>
+<text x="319" y="204" font-size="9.3333">Group 1</text>
+<text x="239" y="217" font-size="9.3333">v = -0.233; no fitted points</text>
+<text x="239" y="230" font-size="9.3333">Equal observations overlap at u = 0</text>
+<text x="198.5" y="250" text-anchor="middle" font-size="9.3333">Dimensionless synthetic values; colors/markers denote numerical group IDs.</text>
+</g>
+</svg>

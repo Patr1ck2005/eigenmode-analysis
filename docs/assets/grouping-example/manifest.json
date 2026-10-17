@@ -1,0 +1,125 @@
+{
+  "input_kind": "independently defined dimensionless mathematics",
+  "public_api_source": "d82251086f50cb1428c35f457631f74c10b5afc2",
+  "script_sha256": "59bd9020acc5ba8913262dc645d7fb92f6c14853986b7e8139a391c0a7dfdf2f",
+  "seed": 1729,
+  "grid_shape": [
+    7,
+    7
+  ],
+  "axes": {
+    "u": [
+      -1.0,
+      -0.6666666666666667,
+      -0.33333333333333337,
+      0.0,
+      0.33333333333333326,
+      0.6666666666666665,
+      1.0
+    ],
+    "v": [
+      -0.7,
+      -0.4666666666666667,
+      -0.23333333333333334,
+      0.0,
+      0.23333333333333328,
+      0.46666666666666656,
+      0.7
+    ]
+  },
+  "missing_grid_index": [
+    3,
+    3
+  ],
+  "definition": "z = 1 +/- 0.25*u + 0.03*v + 0.02j; two observations per observed site, shuffled independently",
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "eigenmode-analysis": "0.3.1",
+    "algorithm": "stable-v1.0.0"
+  },
+  "installed_python_sources": {
+    "__init__.py": "216357782e88403fe79f4ffa4d05ac16b2f00b8fcecc9c9033b1c42cbfba8d47",
+    "_version.py": "23088a6e26decd3fc38432a661c35aa8dde7ef6640cd86d4d005fe696a5a5d9d",
+    "band_grouping/__init__.py": "3654ad702c553c481812f443980faf7e76fff3c9dec96a7637bfb1d8ab7af1c9",
+    "band_grouping/_stable/__init__.py": "e390fc879e8631f96ea250a4b3985cafddce09c486784bc72157e9428be77339",
+    "band_grouping/_stable/classification.py": "010439893fda315cf236a5b4d48171fa29a0d584cac7bc10568a73f9ee5541ed",
+    "band_grouping/_stable/discriminant_transport.py": "66098ae4e0a8de23e363c07d8270f891fb6c0bccdfe0a77346f7f7521ee6cb4c",
+    "band_grouping/_stable/grouped_output.py": "24ffa8a4707acbeb85cea9f3673f631ffb718dc4be385cfd160927fe31da034e",
+    "band_grouping/_stable/local_pair_stitching.py": "142609425bc1c2543a6ffd30e481dc0a3d4517136b856d20ee958495349b84ee",
+    "band_grouping/_stable/local_spectral_contact.py": "d0e4455e39c7aaf5ff0bfc12ca059c51491983fd5d3fbbe10f8e9d7aeab8b89c",
+    "band_grouping/_stable/model.py": "8c220b016dbf8d60bfa5c5c2973cf7d1f4b799748ecb4bd993930583cb9e5a52",
+    "band_grouping/_stable/model_guided_transport.py": "8f6f827989cd6869ada27c9422e07d277d2d9584a75bbe297f9409954d935fe9",
+    "band_grouping/_stable/multiband_blocks.py": "a00c6e022a877c8db91bd08971e79df6a989feea84f514f6fb70ed21895ca3b1",
+    "band_grouping/_stable/partial_observation_grouping.py": "fe510ca16856217a58f4a3f798c91f3eea40244648fd5a4167402a4a3f79a0aa",
+    "band_grouping/_stable/partial_observations.py": "e844d94879ee40bc45ce4ee724f8a1d02804f224203dc65c74b918c3c521ff2f",
+    "band_grouping/_stable/permutation_transport.py": "5414407530d8d3205ecafaf44cd7cf7254764e9e0d7f33b63a4f9446473dfbeb",
+    "band_grouping/_stable/polynomial.py": "3545d32de1cd4981bc3c3a44732ace4df0bee42be8bccac8c9f3a87864e8db4e",
+    "band_grouping/_stable/projected_connections.py": "e0181aa64738f7c322dc57cca33b13ea2650ef3b09d6a2e63faa500e9d247e38",
+    "band_grouping/_stable/scalar_model_grouping.py": "adcddfb38cdf1299f0ee30da5fa0cb05b720a3437cf11439da6f948c76692b7f",
+    "band_grouping/_stable/scalar_models.py": "625d7e8eee21af58f253de7d264578f87f1f8ae5b20d101e49bbd6453dc49f51",
+    "band_grouping/_stable/scalar_strip.py": "abf060095021c82e5bd10cfc7c5bf0570cee671590379eaeeaf1489a418547f1",
+    "band_grouping/_stable/stable_v1.py": "70440c88529ae05878157d3d2fac6f98375775646ed2dbf85ef18845d33b7874",
+    "band_grouping/_stable/tracking.py": "720d75c60a9871f59440bfb09c762aa204c386cf2a17a3d808be240c324f5c3a",
+    "band_grouping/api.py": "a226b553e00f7c76d7084b5bbf3d848b456176deccd3b3d6b3a50d7c24296f23",
+    "field_regimes.py": "f9783ca89fd485e0a3c22c6bda6cc90e5a982c08905a52e0af00b794f36f4db5",
+    "grid_sampling.py": "5bec84d5eb5dc41fa9a206f0e0bb2c16a9551175a424303ccea2fb78e2e15cb8",
+    "lineshapes.py": "020a72064327f6f19d089a6bb3b68dfc5d1f2ad01b503c9797cf22e2082c9de2",
+    "peak_tracking.py": "0e19fd2c7d87e68384189c92f1e6c54630aff3f73668f2a437ba0d98682fe22b",
+    "polarization.py": "bc632d053162511bc4972767d6c9314388827d70ad51fd3a205a007c06082593",
+    "propagation.py": "85d57511eb43422428553341460d7adc74aa0af94fe364e4ea7c2adb3b0cc49e",
+    "runtime.py": "f4f67d15b7c46a5cc7d990433d725c3ddbc1809912b049f47e06eb4e0cd00891",
+    "symmetry.py": "05bd53d68891b415046b278d97a16c4fa16e6549d7c8b978bcda56ae8d40f17f",
+    "topology.py": "2f2cb1bc0208ce57d2ea2b8b08733a54bb03a0f5a38d87c35e5751f487d2b8eb",
+    "tracking/__init__.py": "ee439e17d61a6facca1dfee2aa4324d05cf07cf341c1d74075592ce9c2efe4b9",
+    "tracking/_common.py": "1402fd478afbb2849d1aa2bc9e82714209bbff48bb5340dad6db645c9638a232",
+    "tracking/additional.py": "d2025706ad9d373bd2a08df4f9e4841e7c5c5686ba0eb9f27f76334dbe0aefe3",
+    "tracking/graph.py": "94d1533eeee4fb1b29666286c033e22866a1c1e1535f7926405cd3790ffa97bd",
+    "tracking/legacy_hungarian.py": "e80253122f9ec052c6e14e835f8741c32e4ada4179c9759331805aba9e22bdeb",
+    "tracking/models.py": "3a19ad1c8cdd643cdb5e40405039f6dbd26ff9e06db0fb085d23358a00e74ddc",
+    "tracking/path.py": "607d5aad64d3d63cc2b0e187918e795728075b94853a30f07b5adf68a010334c",
+    "tracking/postprocess.py": "7bd8f1020a6408758ecf06589cdac799ed6636138142a10cdc20edd1169566e3"
+  },
+  "groups": 2,
+  "triangles": 128,
+  "checks": {
+    "raw_observations": 96,
+    "assigned_observations": 96,
+    "empty_sites": 1,
+    "equal_frequency_sites": 6,
+    "equal_frequency_observations": 12,
+    "source_value_bytes_unchanged": true,
+    "raw_csv_bytes_unchanged": true,
+    "original_indices_and_payload_unchanged": true,
+    "each_raw_identity_exactly_once": true,
+    "all_exported_values_equal_original_values": true,
+    "empty_site_remains_missing": true,
+    "triangles_use_only_original_rows": true,
+    "all_assertions_passed": true
+  },
+  "raw_csv_sha256": "a39bfcf0122539e3aa30245526bd69a55074aeb616226957a56184eaf2f37fcd",
+  "diagnostic_status": {
+    "software_status": "completed",
+    "scientific_status": "conditional_or_provisional",
+    "physical_correctness_proven": false,
+    "probability": null
+  },
+  "scope": "Observation preservation demonstration; group labels are not certified physical identities or calibrated probabilities.",
+  "figure": {
+    "width_mm": 105,
+    "height_mm": 68,
+    "font": "Arial with Helvetica/sans-serif fallback",
+    "labels_pt": 8,
+    "notes_pt": 7,
+    "transformation": "2D support plus observed constant-v section; scatter only, no fitted/interpolated observations"
+  },
+  "outputs": {
+    "raw-observations.csv": "a39bfcf0122539e3aa30245526bd69a55074aeb616226957a56184eaf2f37fcd",
+    "grouped-observations.csv": "2953e825858ccdc594141e5fd46ed8d38d5acea586291a9b2839b2f7abe4c9c1",
+    "assignment.csv": "a43dd760d0d9a9b01a29a4ef2b73a15dcbe97509b30a8d6aae42fea16ec578b7",
+    "triangles.csv": "1e6408824c92b8de1d8cc7eed654f925208ad44e5229b4a9532cbf9ebe43b52f",
+    "diagnostics.json": "2d76da299f2abffc3103acb7d5209bd975b3bf7f277a65fbd08de6e5be9bfc35",
+    "grouping.svg": "95531d94b1f80f7cc86ca72ee060e2e99f7f6ecc5cb02699e7041033177d9c4a"
+  }
+}
